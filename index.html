@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compitable" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta name="author" content="Developer Shagar">
+        <link rel="stylesheet"href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Adventure Website</title>
+    </head>
+    <body>
+        <!-- header area Start here  -->
+        <header id="home">
+            <div class="container">
+                <nav>
+                    <a class="logo" href="">
+                        <img src="img/Brand logo.png" alt="">
+                    </a>
+                    <div>
+                        <i id="menu-icon" class='bx bx-menu' ></i>
+                    </div>
+                    <ul class="nav-list" id="navMenu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#outdoor">Destination</a></li>
+                        <li><a href="#testimonial">Testimonial</a></li>
+                        <li><a href="#adventure">adevnture</a></li>
+                        <li><a href="">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header area End here  -->
+        <main>
+            <!-- Hero section start here -->
+            <section class="hero">
+                <div class="container">
+                    <div class="main-message">
+                        <h3>The Great Outdoor</h3>
+                        <h1>Adventure</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus fugit eveniet quae, est veritatis dolores. Labore, incidunt. Cumque optio aliquam amet dolore sequi dolor culpa odio voluptatem! Dolores, quidem eos.</p>
+    
+                        <div class="cta">
+                            <a class="btn" href="">Book Now</a>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+            <!-- Hero section end here  -->
+            <!-- Experiance section start here  -->
+            <section id="outdoor" class="experiance-outdoors">
+                <div class="container">
+                    <div class="title-heading">
+                        <h3>Experiance</h3>
+                        <h1>The Thrilling Outdoors</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="activities-grid">
+                        <div class="single-grid star-gazing">
+                            <i class='bx bx-cycling'></i>
+                            <h1>Star Gazing</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex corporis officiis maxime sequi quibusdam quidem odio qui quis. Dicta enim pariatur animi, minus dolorem voluptates? Asperiores rerum facilis maxime.</p>
+                        </div>
+
+                        <div class="single-grid hiking">
+                            <i class='bx bxs-compass' ></i>
+                            <h1>Hiking</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex corporis officiis maxime sequi quibusdam quidem odio qui quis. Dicta enim pariatur animi, minus dolorem voluptates? Asperiores rerum facilis maxime.</p>
+                        </div>
+
+                        <div class="single-grid camping">
+                            <i class='bx bxs-hot'></i>
+                            <h1>Camping</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex corporis officiis maxime sequi quibusdam quidem odio qui quis. Dicta enim pariatur animi, minus dolorem voluptates? Asperiores rerum facilis maxime.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Experiance section end here  -->
+            <!-- Testimonial section start here  -->
+            <section id="testimonial" class="testimonials">
+                <div class="container">
+                    <div class="testimonial">
+                        <div class="testimonial-text-box">
+                            <p>this trip was amazing, i cant wait for do it all over</p>
+                            <i class='bx bxs-quote-right'></i>
+                        </div>
+                        <div class="testimonial-image">
+                            <img src="img/profile-pic.jpg" alt="testimonial-image">
+                            <h1>Martin p.</h1>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Testimonial section end here  -->
+            <!-- Adventure section start here  -->
+            <section id="adventure" class="adventure">
+                <div class="container">
+                    <div class="title-heading">
+                        <h3>Let The</h3>
+                        <h1>Adventure Begin</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+
+                    <div class="adventure-grid">
+                        <div class="adventure-single">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium veritatis dignissimos omnis ullam mollitia tempora repudiandae incidunt iusto! Voluptatum cupiditate culpa, dolorem rem impedit dolores libero inventore at animi.</p>
+                        </div>
+
+                        <div class="adventure-single">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis laudantium veritatis dignissimos omnis ullam mollitia tempora repudiandae incidunt iusto! Voluptatum cupiditate culpa, dolorem rem impedit dolores libero inventore at animi.</p>
+                        </div>
+
+                    </div>
+                    <a class="btn" href="">Book Your Adventure</a>
+                </div>
+            </section>
+            <!-- Adventure section end here  -->
+        </main>
+            <!-- Footer section start here  -->
+        <footer>
+            <p>Copyright By<i class='bx bxs-heart' ></i> Developer Shagar</p>
+        </footer>
+             <!-- Footer section end here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       <script>
+            var sideNav = document.getElementById("navMenu");
+            var menuBtn = document.getElementById("menu-icon");
+   
+
+            sideNav.style.right = "-25rem";
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-25rem"){
+                    sideNav.style.right = "0";
+                   
+                }
+                else{
+                    sideNav.style.right = "-25rem";
+                   
+                }
+            }
+
+       </script>
+    </body>
+</html>

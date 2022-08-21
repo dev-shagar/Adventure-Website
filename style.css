@@ -1,0 +1,369 @@
+/* Goolge Font Setup Start Here  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Teko:wght@300&display=swap');
+/* Goolge Font Setup End Here  */
+
+
+/* global setup start here */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+html{
+    font-size:10px;
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Teko', sans-serif; */
+}
+a{
+    text-decoration:none;
+    color:#eee;
+}
+ul{
+    list-style:none;
+}
+p{
+    font-size:1.6rem;
+}
+img{
+    max-width:100%;
+    width:100%;
+    height:auto;
+}
+section{
+    padding:5rem 0;
+}
+.container{
+    width:100%;
+    max-width:98rem;
+    margin:0 auto;
+    padding:0 1.4rem;
+}
+/* Global setup end here  */
+
+
+/* header area start here  */
+header{
+    width: 100%;
+    height:8rem;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 1;
+}
+#menu-icon{
+    display:none;
+}
+nav{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 0;
+    border-bottom:1px solid rgba(255,255,255,.2);
+    
+}
+.logo img{
+    max-width:100%;
+    width:15rem;
+    background-color:#eee;
+    padding:.5rem 1rem;
+    border-radius:.4rem;
+}
+.nav-list{
+    display:flex;
+}
+#menu-icon{
+    font-size:4rem;
+    color:white;
+}
+.nav-list li{
+    margin:0 1.6rem;
+    position:relative;
+}
+.nav-list li::after{
+    content: "";
+    position:absolute;
+    width:0px;
+    height:2px;
+    background:brown;
+    left:0;
+    top:2rem;
+    transition: 0.3s all;
+}
+.nav-list li:hover::after{
+    width:100%;
+}
+.nav-list li a{
+    color:#eee;
+    font-size:1.6rem;
+    text-transform: uppercase;
+    font-weight:200;
+}
+.hero{
+    width:100%;
+    height:100vh;
+    background:linear-gradient( 135deg ,rgba(49,24,131,0.9) 0%,rgba(72,56,149,0.8) 100%), url(img/background.jpg) center no-repeat;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+}
+.hero::before{
+    content: "";
+    position:absolute;
+    left:0;
+    bottom:-3px;
+    width:100%;
+    height:4.7rem;
+    background: url(img/wave-small.png) center no-repeat;
+    background-size:cover;
+}
+.main-message{
+    width: 100%;
+    max-width:40rem;
+    color:white;
+    text-transform: uppercase;
+    transform: translateY(10rem);
+}
+.main-message h3{
+    font-size:1.6rem;
+}
+.main-message h1{
+    font-size:6rem;
+    margin:1rem 0;
+
+}
+.main-message p{
+    text-transform: lowercase;
+}
+ .btn{
+    display:inline-block;
+    margin-top:1rem;
+    padding:10px 15px;
+    background:brown;
+    border-radius:.2rem;
+    font-size:1.6rem;
+}
+@media(min-width:980px){
+    .hero::before{
+        height:22.7rem;
+        background:url(img/wave-large.png);
+        background-size:cover;
+    }
+}
+/* header area end here  */
+
+/* Experiance section start here  */
+.experiance-outdoors{
+    padding:0;
+}
+.title-heading{
+    text-align:center;
+    text-transform: uppercase;
+    margin-bottom:5rem;
+
+}
+.title-heading h3{
+    font-size:1.4rem;
+}
+.title-heading h1{
+    font-size:3rem;
+    margin:.3rem 0 .8rem;
+}
+.title-heading p{
+    text-transform: lowercase;
+}
+.activities-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap:2.5rem;
+}
+.single-grid{
+    height:40rem;
+    padding:5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    cursor:pointer;
+    position: relative;
+    z-index: 1;
+    color:white;
+}
+.single-grid::before{
+    content: "";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:linear-gradient( 135deg ,rgba(49,24,131,0.9) 0%,rgba(72,56,149,0.8) 100%);
+    top:0;
+    left:0;
+    z-index: -1;
+}
+.star-gazing{
+    background:url(img/stars.jpg) center no-repeat;
+}
+.hiking{
+    background:url(img/hiking.jpg) center no-repeat;
+}
+.camping{
+    background:url(img/camping.jpg) center no-repeat;
+}
+.single-grid i{
+    font-size:4rem;
+    color:#eb6486;
+}
+.single-grid h1{
+    font-size:1.6rem;
+    text-transform: uppercase;
+    margin:2rem 0;
+}
+.single-grid p{
+    background:#eb6486;
+    padding:.5rem;
+    border-radius:.6rem;
+}
+/* Experiance section end here  */
+
+/* Testimonial section start here  */
+.testimonials{
+    width: 100%;
+    height:80vh;
+    background:linear-gradient( 135deg ,rgba(49,24,131,0.2) 0%,rgba(72,56,149,0.8) 100%), url(img/background-2.jpg) center no-repeat;
+    background-size:cover;
+    position:relative;
+    background-attachment: fixed;
+}
+.testimonials::before{
+    position:absolute;
+    content: "";
+    width:100%;
+    height:4.7rem;
+    top:0;
+    left:0;
+    background:url(img/wave-small-reversed.png) center no-repeat;
+    background-size:cover;
+}
+.testimonial{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.testimonial-image img{
+    width:12rem;
+    border:2px solid #eb6486;
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px white;
+}
+.testimonial-text-box i{
+    position:absolute;
+    top:-8rem;
+    left:50%;
+    font-size:6rem;
+    transform: translateX(-50%);
+    color:#eb6486;
+}
+.testimonial-text-box p{
+    text-transform: capitalize;
+    margin-bottom:1rem;
+    color:#eee;
+}
+.testimonial-image h1{
+    color:#eee;
+    position:relative;
+}
+.testimonial-image h1::after{
+    content: "";
+    width:1.5rem;
+    height:1.5rem;
+    background:green;
+    border-radius:50%;
+    display: block;
+    right:14rem;
+    top:.3rem;
+    position: absolute;
+    box-shadow: 0 0 5px black;
+
+}
+@media(min-width:980px){
+    .testimonials::before{
+        height:22.7rem;
+        background:url(img/wave-large-reversed.png);
+        background-size:cover;
+    }
+    
+}
+/* Testimonial section end here  */
+
+
+/* Adevnture section start here  */
+.adventure-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem,1fr));
+    grid-gap:2rem;
+    margin-bottom:2rem;
+}
+.adventure-single{
+    padding:.5rem;
+    border-radius:.5rem;
+    background:linear-gradient( 135deg ,rgba(49,24,131,0.9) 0%,rgba(72,56,149,0.8) 100%);
+    box-shadow:0px 0px 10px  #eb6486;
+}
+.adventure-single p{
+    color:#eee;
+    text-transform: capitalize;
+
+}
+.adventure {
+    text-align: center;
+}
+/* Adevnture section end here  */
+
+
+/* Footer section start here  */
+footer{
+    padding:2.4rem 0;
+    background:#d7d4ed;
+    text-align: center;
+    text-transform: capitalize;
+    font-size:1.5rem;
+}
+footer i{
+    color:#eb6486;
+}
+/* Footer section end here  */
+
+
+/* Responsive setup start here  */
+@media(max-width:1199px){
+    .nav-list{
+        position:absolute;
+        top:10rem;
+        right:-25rem;
+        width:25rem;
+        background:rgba(49,24,131);
+        height:50vh;
+        flex-direction: column;  
+        z-index: 9999;
+        transition:0.3s all;
+    }
+    .nav-list li{
+        margin:2rem 1rem;
+        
+    }
+    .nav-list li:hover::after{
+        width:10rem;
+    }
+    #menu-icon{
+        display:initial;
+        
+    }
+}
+@media(max-width:576px){
+    .hero{
+        height:80vh;
+    }
+}
+/* Responsive setup end here  */
